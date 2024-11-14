@@ -52,7 +52,7 @@ def interpret(code):
                 while depth > 0:
                     pc += 1
                     if pc >= len(tokens):
-                        raise SyntaxError("Loop start has no matching")
+                        raise SyntaxError("Loop start has no matching ")
                     if tokens[pc] == 'start_loop':
                         depth += 1
                     elif tokens[pc] == 'end_loop':
