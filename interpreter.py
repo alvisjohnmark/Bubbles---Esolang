@@ -53,7 +53,7 @@ def interpret(code):
         elif command == 'decrement':
             memory[pointer] = (memory[pointer] - 1) % 256
         elif command == 'output':
-            ascii_value = memory[pointer]   #store ascii value
+            ascii_value = memory[pointer]    #store ascii value
             output.append(chr(ascii_value))  #store char to output string
         elif command == 'next_cell':
             pointer = (pointer + 1) % len(memory)
