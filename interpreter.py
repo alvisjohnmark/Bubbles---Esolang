@@ -12,8 +12,7 @@ def interpret(code):
         'oooO': 'end_loop',
     }
 
-    #remove spaces and line breaks
-    code = code.strip().replace(" ", "").replace("\n", "")
+    code = code.strip().replace(" ", "").replace("\n", "")  #remove spaces and line breaks
 
     #tokenize commands
     tokens = []
